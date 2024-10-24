@@ -60,7 +60,8 @@ else
       echo "Compiling image..."
       bitbake -f ${target} -ccompile
    fi
-   echo "Compiling and deploying..."
+   echo "Building DTB & modules and deploying..."
+   bitbake -f ${target} -ccompile_kernelmodules
    bitbake -f ${target} -cdeploy
 fi
 

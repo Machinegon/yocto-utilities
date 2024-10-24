@@ -10,11 +10,11 @@ IMAGE_NAME="Image"
 
 set -e
 
-PROG_NAME="./compile.sh"
+PROG_NAME="./install-target.sh"
 
 print_usage()
 {
-   echo "Usage: ${PROG_NAME} [KERNEL MODULES PATH]"
+   echo "Usage: ${PROG_NAME} [KERNEL MODULES NAME]"
    echo
 }
 
